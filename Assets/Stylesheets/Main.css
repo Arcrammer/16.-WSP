@@ -7,8 +7,162 @@
 /* Master Reset */
 html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{vertical-align:baseline;font-family:inherit;font-weight:inherit;font-style:inherit;font-size:100%;outline:0;padding:0;margin:0;border:0}:focus{outline:0}body{background:#fff;line-height:1;color:#000}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{font-weight:400;text-align:left}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}
 
+/* Resetting annoying Foundation properties */
+.top-bar .button, .top-bar button {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* Structure */
+body {
+    background-image: url("../Images/OneMadisonPark.jpg") !important;
+    background-position: center 15% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 .container {
     margin: auto;
     width: 80%;
 }
+
+/* Top Bar */
+.container > .contain-to-grid, .top-bar .fixed, .top-bar, .top-bar li, .top-bar .top-bar-section a {
+    /* Re-colour the top bar */
+    background-color: #53dee5 !important;
+}
+
+.top-bar {
+    overflow: auto !important;
+    margin: 10px auto !important;
+    width: 80%;
+}
+
+.divider {
+    border-color: #4ec8ce !important;
+    margin: 5px 10px;
+    height: 35px !important;
+}
+
+.name > h1 {
+    /* Logo and Title */
+    font-family: "Museo Slab";
+    float: right;
+}
+
+img[alt="Logo.png"] {
+    float: left;
+    width: 25px;
+}
+
+input[name="search_query"] {
+    border-radius: 5px !important;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    margin-top: -1.5px !important;
+    padding: 15px !important;
+    width: 112.44019139% !important;
+}
+
+/* Menu Items */
+nav .right a:link {
+    height: 100% !important;
+    letter-spacing: 2px !important;
+    overflow: hidden; /* Prevent list items from showing taller than the navigation bar */
+    padding: 15px !important;
+    top: 0;
+    text-transform: uppercase !important;
+}
+
+nav img[alt="Search.png"] {
+    width: 15px;
+}
+
+/* Buttons */
+a.button:link {
+    background-color: #73e6bf !important;
+}
+
+a.button:visited {
+    background-color: #73e6bf !important;
+}
+
+a.button:hover {
+    background-color: #7eefc9 !important;
+}
+
+a.button:active {
+    background-color: #54c9a2 !important;
+}
+
+/* Search Bar */
+.search-bar input[type="text"] {
+    background: rgba(255,255,255,0.975) !important;
+    font-size: 1.25em !important;
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    margin: 15% auto !important;
+    padding: 4.4191919192% 5.6818181818% !important;
+}
+
+.search-bar input[type="text"]:hover, .search-bar input[type="text"]:focus {
+    font-style: italic;
+}
+
+.search-bar input[type="submit"] {
+    background-color: #73e6bf !important;
+    position: relative;
+    top: -180px;
+    right: 10px;
+    float: right;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #7eefc9 !important;
+}
+
+.search-bar input[type="submit"]:active {
+    background-color: #54c9a2 !important;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Museo Slab";
+    font-weight: 500;
+    src: url("../Fonts/MuseoSlab.otf");
+}
+
+/* Media Queries */
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Top Bar */
+        .top-bar .right {
+            display: none !important;
+        }
+        
+        /* Search Bar */
+        .search-bar input[type="submit"] {
+            margin: 15px 32.5% 45px;
+            position: relative;
+            top: -50px;
+            right: 0;
+            width: 35%;
+        }
+    }
+
+@media only screen
+    and (min-width: 990px) {
+        /* 990px and higher */
+        
+        /* Structure */
+        .container {
+            width: 792px;
+        }
+        
+        .bottom-bar {
+            width: 990px;
+        }
+    }
