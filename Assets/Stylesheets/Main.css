@@ -15,15 +15,17 @@ html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td
 
 /* Structure */
 body {
+    background-color: #555 !important;
     background-image: url("../Images/OneMadisonPark.jpg") !important;
     background-position: center 15% !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
 .container {
     margin: auto;
-    width: 80%;
+    width: 93.75%;
 }
 
 /* Top Bar */
@@ -33,7 +35,7 @@ body {
 }
 
 .top-bar {
-    overflow: auto !important;
+    overflow: hidden !important;
     margin: 10px auto !important;
     width: 80%;
 }
@@ -80,49 +82,19 @@ nav img[alt="Search.png"] {
 }
 
 /* Buttons */
-a.button:link {
+a.button:link, .mint-button {
     background-color: #73e6bf !important;
 }
 
-a.button:visited {
+a.button:visited, .mint-button:visited {
     background-color: #73e6bf !important;
 }
 
-a.button:hover {
+a.button:hover, .mint-button:hover {
     background-color: #7eefc9 !important;
 }
 
-a.button:active {
-    background-color: #54c9a2 !important;
-}
-
-/* Search Bar */
-.search-bar input[type="text"] {
-    background: rgba(255,255,255,0.975) !important;
-    font-size: 1.25em !important;
-    font-weight: 300;
-    letter-spacing: 0.25px;
-    margin: 15% auto !important;
-    padding: 4.4191919192% 5.6818181818% !important;
-}
-
-.search-bar input[type="text"]:hover, .search-bar input[type="text"]:focus {
-    font-style: italic;
-}
-
-.search-bar input[type="submit"] {
-    background-color: #73e6bf !important;
-    position: relative;
-    top: -180px;
-    right: 10px;
-    float: right;
-}
-
-.search-bar input[type="submit"]:hover {
-    background-color: #7eefc9 !important;
-}
-
-.search-bar input[type="submit"]:active {
+a.button:active, .mint-button:active {
     background-color: #54c9a2 !important;
 }
 
@@ -142,15 +114,6 @@ a.button:active {
         .top-bar .right {
             display: none !important;
         }
-        
-        /* Search Bar */
-        .search-bar input[type="submit"] {
-            margin: 15px 32.5% 45px;
-            position: relative;
-            top: -50px;
-            right: 0;
-            width: 35%;
-        }
     }
 
 @media only screen
@@ -160,9 +123,5 @@ a.button:active {
         /* Structure */
         .container {
             width: 792px;
-        }
-        
-        .bottom-bar {
-            width: 990px;
         }
     }

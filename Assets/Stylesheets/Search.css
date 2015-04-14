@@ -1,0 +1,61 @@
+/*  Search.css
+    Tuesday, 14 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Search Bar */
+.search-bar input[type="text"] {
+    background: rgba(255,255,255,0.975) !important;
+    font-size: 1.25em !important;
+    font-weight: 300;
+    height: 72.5px;
+    letter-spacing: 0.25px;
+    margin: 25% auto !important;
+    text-indent: 4.4191919192% !important;
+}
+
+/* Search Button */
+.search-bar input[type="text"]:hover, .search-bar input[type="text"]:focus {
+    font-style: italic;
+}
+
+.search-bar input[type="submit"] {
+    background-color: #73e6bf !important;
+    position: relative;
+    top: -260px;
+    right: 10px;
+    float: right;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #7eefc9 !important;
+}
+
+.search-bar input[type="submit"]:active {
+    background-color: #54c9a2 !important;
+}
+
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Search Button */
+        .search-bar input[type="submit"] {
+            margin: 0 32.5% 45px;
+            position: relative;
+            top: -50px;
+            right: 0;
+            width: 35%;
+        }
+    }
+
+@media only screen
+    and (max-width: 500px) {
+        /* 500px and wider */
+        
+        /* Search Bar */
+        .search-bar input[type="text"] {
+            height: 50px !important;
+        }
+    }

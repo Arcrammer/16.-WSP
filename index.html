@@ -8,6 +8,7 @@
         <!-- Links -->
             <link rel="stylesheet" href="Assets/Stylesheets/Normalize.css" />
             <link rel="stylesheet" href="Assets/Stylesheets/Main.css" />
+            <link rel="stylesheet" href="Assets/Stylesheets/Search.css" />
             <link rel="stylesheet" href="Assets/Foundation/css/foundation.min.css" />
     </head>
     <body>
@@ -31,7 +32,7 @@
                             <li class="divider"></li>
                             <li><a href="new.html" class="button">Create</a></li>
                             <li class="divider"></li>
-                            <li><a href="search.html" class="button"><img src="Assets/Images/Search.png" alt="Search.png" /></a></li>
+                            <li><a href="index.html" class="button"><img src="Assets/Images/Search.png" alt="Search.png" /></a></li>
                             <li class="divider"></li>
                         </ul> <!-- .right -->
                     </section> <!-- .top-bar-section -->
@@ -39,7 +40,7 @@
             </div> <!-- .contain-to-grid .fixed -->
             <div class="search-bar row">
                 <form method="post">
-                    <input type="text" placeholder="Search Properties..." />
+                    <input type="text" id="propertySearch" placeholder="Search Properties..." />
                     <input type="submit" class="button" value="Find it!" />
                 </form>
             </div> <!-- .search-bar .row -->
@@ -50,6 +51,7 @@
             <script src="Assets/Foundation/js/foundation/foundation.topbar.js"></script>
             <script>
                 $(document).foundation();
+                document.getElementById("propertySearch").focus();
             </script>
     </body>
 </html>

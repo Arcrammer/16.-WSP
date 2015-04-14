@@ -1,0 +1,103 @@
+/*  History.css
+    Tuesday, 14 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Search Bar */
+.search-bar input[type="text"] {
+    margin: 5% auto 0 !important;
+}
+
+/* Search Button */
+.search-bar input[type="submit"] {
+    position: relative;
+    top: -62.5px !important;
+}
+
+/* Bubblies */
+.bubblies {
+    overflow: auto;
+    width: 100%;
+}
+
+.bubble {
+    background-color: rgba(255,255,255,0.75);
+    border: 2px solid rgba(64,64,64,0.5);
+    cursor: pointer;
+    float: left;
+    margin: 1.5782828283%;
+    padding: 10px;
+    transition: background-color 175ms;
+    width: 21.843434343%;
+}
+
+.bubble:hover {
+    background-color: #fff;
+}
+
+.bubble:active {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.bubble h4 {
+    color: #555;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bubble h6 {
+    color: #7c7c7c;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bubble p:first-of-type {
+    /* Image thumbnails */
+    margin: 0;
+}
+
+.bubble p:not(:first-of-type) {
+    font-size: 0.8em;
+    padding: 15px 5px;
+}
+
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Search Button */
+        .search-bar input[type="submit"] {
+            margin: 0 32.5% 45px;
+            position: relative;
+            top: 15px !important;
+            right: 0;
+            width: 35%;
+        }
+        
+        /* Bubblies */
+        .bubble {
+            float: left;
+            margin: 10px;
+            padding: 0;
+            width: 44.5%;
+        }
+        
+        .bubble:nth-child(2n+0) {
+            background-color: red;
+            float: right;
+        }
+    }
+
+@media only screen
+    and (max-width: 845px) {
+        /* 845px and thinner */
+        
+        .bubble {
+            width: ;
+        }
+    }
