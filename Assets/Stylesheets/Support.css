@@ -1,0 +1,39 @@
+/*  Support.css
+    Wednesday, 15 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* FAQ Panels */
+.faq-panels {
+    margin-top: 10%;
+}
+
+.faq-panels div {
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 1.8939393939%;
+    width: 29.545454545%;
+}
+
+.faq-panels div h4 {
+    color: #555;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin: 5% 0;
+    text-transform: uppercase;
+}
+
+.faq-panels li {
+    margin: 2.5% 0;
+    text-indent: -5px;
+}
+
+@media only screen
+    and (max-width: 640px) {
+        /* 640px and thinner */
+        
+        .faq-panels div {
+            margin: 2% 0;
+            width: 100%;
+        }
+    }
