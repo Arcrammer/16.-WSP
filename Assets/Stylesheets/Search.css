@@ -8,15 +8,22 @@
 .search-bar input[type="text"] {
     background: rgba(255,255,255,0.975) !important;
     font-size: 1.25em !important;
-    font-weight: 300;
     height: 72.5px;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.75px;
     margin: 25% auto !important;
     text-indent: 4.4191919192% !important;
+    transition: box-shadow 175ms;
+    -webkit-transition: box-shadow 175ms;
+}
+
+.search-bar input[type="text"]:hover, .search-bar input[type="text"]:active {
+    background-color: #fff;
 }
 
 /* Search Button */
 .search-bar input[type="text"]:hover, .search-bar input[type="text"]:focus {
+    border-color: rgb(115,230,191);
+    box-shadow: 0 0 10px 0 rgb(115,230,191);
     font-style: italic;
 }
 

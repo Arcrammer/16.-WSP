@@ -69,8 +69,9 @@ input[name="search_query"] {
 
 /* Menu Items */
 nav .right a:link {
+    font-size: 0.75em !important;
     height: 100% !important;
-    letter-spacing: 2px !important;
+    letter-spacing: 1.75px !important;
     overflow: hidden; /* Prevent list items from showing taller than the navigation bar */
     padding: 15px !important;
     top: 0;
@@ -78,10 +79,17 @@ nav .right a:link {
 }
 
 nav img[alt="Search.png"] {
-    width: 15px;
+    height: 12.5px;
+    position: relative;
+    top: -2px;
 }
 
 /* Buttons */
+.mint-button {
+    border-color: #73e6bf !important; /* Starting colour -- Prevents border animating from #000 which is the default */
+    transition: background-color 75ms, border-color 75ms !important;
+}
+
 a.button:link, .mint-button {
     background-color: #73e6bf !important;
 }
@@ -90,12 +98,17 @@ a.button:visited, .mint-button:visited {
     background-color: #73e6bf !important;
 }
 
-a.button:hover, .mint-button:hover {
+a.button:hover, .mint-button:hover, nav .right a:hover {
     background-color: #7eefc9 !important;
+    border: 2px solid #54c9a2 !important;
+    padding: 13px !important;
 }
 
-a.button:active, .mint-button:active {
-    background-color: #54c9a2 !important;
+a.button:active, .mint-button:active, nav .right a:active {
+    background-color: #4cb491 !important;
+    color: #f1f1f1 !important;
+    border: 2px solid #5cc7a4 !important;
+    padding: 13px !important;
 }
 
 /* Fonts */
