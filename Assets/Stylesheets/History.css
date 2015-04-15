@@ -26,10 +26,16 @@
     border: 2px solid rgba(64,64,64,0.5);
     cursor: pointer;
     float: left;
-    margin: 1.5782828283%;
-    padding: 10px;
+    margin: 0.6313131313%;
+    padding: 1.2626262626%;
     transition: background-color 175ms;
-    width: 21.843434343%;
+    width: 23.737373737%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; /* Prevent selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .bubble:hover {
@@ -88,7 +94,6 @@
         }
         
         .bubble:nth-child(2n+0) {
-            background-color: red;
             float: right;
         }
     }
