@@ -24,8 +24,34 @@
 }
 
 .faq-panels li {
-    margin: 2.5% 0;
+    font-size: 0.9em;
+    margin: 5% 0;
     text-indent: -5px;
+}
+
+.faq-panels a {
+    color: #d96dd9 !important;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 100ms;
+}
+
+.faq-panels a:link {
+    color: #d96dd9 !important;
+}
+
+.faq-panels a:visited {
+    color: #d96dd9 !important;
+}
+
+.faq-panels li a:hover {
+    color: #c34dc3 !important;
+    text-decoration: underline;
+}
+
+.faq-panels li a:active {
+    color: #a139a1 !important;
 }
 
 @media only screen
