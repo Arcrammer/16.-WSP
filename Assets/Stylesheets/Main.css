@@ -68,7 +68,14 @@ input[name="search_query"] {
 }
 
 /* Menu Items */
-nav .right a:link {
+nav img[alt="Search.png"] {
+    height: 12.5px;
+    position: relative;
+    top: -2px;
+}
+
+/* Menu Links */
+nav section.top-bar-section ul.right a:link {
     font-size: 0.75em !important;
     height: 100% !important;
     letter-spacing: 1.75px !important;
@@ -78,10 +85,16 @@ nav .right a:link {
     text-transform: uppercase !important;
 }
 
-nav img[alt="Search.png"] {
-    height: 12.5px;
-    position: relative;
-    top: -2px;
+nav section.top-bar-section ul.right a:visited {
+    padding: 15px !important;
+}
+
+nav section.top-bar-section ul.right a:hover {
+    padding: 13px !important;
+}
+
+nav section.top-bar-section ul.right a:visited {
+    padding: 13px !important;
 }
 
 /* Buttons */
@@ -98,17 +111,17 @@ a.button:visited, .mint-button:visited {
     background-color: #73e6bf !important;
 }
 
-a.button:hover, .mint-button:hover, nav .right a:hover {
+a.button:hover, .mint-button:hover {
     background-color: #7eefc9 !important;
     border: 2px solid #54c9a2 !important;
-    padding: 13px !important;
+    padding: 15px !important;
 }
 
-a.button:active, .mint-button:active, nav .right a:active {
+a.button:active, .mint-button:active {
     background-color: #4cb491 !important;
     color: #f1f1f1 !important;
     border: 2px solid #5cc7a4 !important;
-    padding: 13px !important;
+    padding: 15px !important;
 }
 
 /* Fonts */
