@@ -6,6 +6,7 @@
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     		<meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <!-- Links -->
+            <link rel="shortcut icon" href="Assets/Images/Logo.png" />
             <link rel="stylesheet" href="Assets/Stylesheets/Normalize.css" />
             <link rel="stylesheet" href="Assets/Stylesheets/Main.css" />
             <link rel="stylesheet" href="Assets/Stylesheets/Detail.css" />
