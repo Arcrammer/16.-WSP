@@ -13,44 +13,17 @@
     </head>
     <body>
         <div class="container">
-            <div class="contain-to-grid fixed">
-                <nav class="top-bar" data-topbar role="navigation">
-                    <ul class="title-area">
-                        <li class="name">
-                            <h1><img src="Assets/Images/Logo.png" alt="Logo.png"></h1>
-                            <h1><a href="index.html">Pararmani</a></h1>
-                        </li> <!-- .name -->
-                    </ul> <!-- .title-area -->
-                    <section class="top-bar-section">
-                        <header id="hide-it">Loading...</header>
-                        <ul class="right">
-                            <li class="divider"></li>
-                            <li><a href="index.html" class="button">Home</a></li>
-                            <li class="divider"></li>
-                            <li><a href="research.html" class="button">History</a></li>
-                            <li class="divider"></li>
-                            <li><a href="support.html" class="button">Support</a></li>
-                            <li class="divider"></li>
-                            <li><a href="new.html" class="button">Create</a></li>
-                            <li class="divider"></li>
-                            <li><a href="index.html" class="button"><img src="Assets/Images/Search.png" alt="Search.png" /> Search</a></li>
-                            <li class="divider"></li>
-                        </ul> <!-- .right -->
-                    </section> <!-- .top-bar-section -->
-                </nav> <!-- .top-bar -->
-            </div> <!-- .contain-to-grid .fixed -->
+            <?php include "Assets/Inclusions/Navigation.php" ?>
             <div class="detail">
                 <h4 id="name">Loading...</h4>
                 <h6 id="status">Loading...</h6>
                 <p><img src="/" id="image" alt="Loading..." /></p>
                 <p id="desc"></p>
             </div> <!-- .detail -->
-            <a href="research.html" class="button">&laquo; Back</a>
+            <a href="research.php" class="button">&laquo; Back</a>
         </div> <!-- .container -->
         <!-- Scripts -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-            <script src="Assets/Foundation/js/foundation.min.js"></script>
-            <script src="Assets/Foundation/js/foundation/foundation.topbar.js"></script>
+            <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
             <script>
                 $(document).foundation();
                 $("#hide-it").css("display","none");

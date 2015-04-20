@@ -14,31 +14,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="contain-to-grid fixed">
-                <nav class="top-bar" data-topbar role="navigation">
-                    <ul class="title-area">
-                        <li class="name">
-                            <h1><img src="Assets/Images/Logo.png" alt="Logo.png"></h1>
-                            <h1><a href="index.html">Pararmani</a></h1>
-                        </li> <!-- .name -->
-                    </ul> <!-- .title-area -->
-                    <section class="top-bar-section">
-                        <ul class="right">
-                            <li class="divider"></li>
-                            <li><a href="index.html" class="button">Home</a></li>
-                            <li class="divider"></li>
-                            <li><a href="research.html" class="button">History</a></li>
-                            <li class="divider"></li>
-                            <li><a href="support.html" class="button">Support</a></li>
-                            <li class="divider"></li>
-                            <li><a href="new.html" class="button">Create</a></li>
-                            <li class="divider"></li>
-                            <li><a href="index.html" class="button"><img src="Assets/Images/Search.png" alt="Search.png" /> Search</a></li>
-                            <li class="divider"></li>
-                        </ul> <!-- .right -->
-                    </section> <!-- .top-bar-section -->
-                </nav> <!-- .top-bar -->
-            </div> <!-- .contain-to-grid .fixed -->
+            <?php include "Assets/Inclusions/Navigation.php" ?>
             <div class="search-bar row">
                 <form method="post">
                     <input type="text" placeholder="Search Properties..." />
@@ -47,7 +23,7 @@
             </div> <!-- .search-bar .row -->
             <div class="bubblies">
                 <div class="bubble">
-                    <a href="detail.html?for=432+Park+Avenue">
+                    <a href="detail.php?for=432+Park+Avenue">
                         <h4>432 Park Avenue</h4>
                         <h6>Under Construction</h6>
                         <p><img src="Assets/Images/432ParkAvenue.jpg" alt="432ParkAvenue.jpg" /></p>
@@ -55,7 +31,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=Gatchina">
+                    <a href="detail.php?for=Gatchina">
                         <h4>Gatchina</h4>
                         <h6>Unknown</h6>
                         <p><img src="Assets/Images/Gatchina.jpg" alt="Gatchina.jpg" /></p>
@@ -63,7 +39,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=Floor+to+Ceiling+Windows">
+                    <a href="detail.php?for=Floor+to+Ceiling+Windows">
                         <h4>Floor to Ceiling Windows</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/FloorCielingWindows.png" alt="FloorCielingWindows.png" /></p>
@@ -71,7 +47,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=Gramercy+Park+Flat">
+                    <a href="detail.php?for=Gramercy+Park+Flat">
                         <h4>Gramercy Park Flat</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/GramercyPark.png" alt="GramercyPark.png" /></p>
@@ -79,7 +55,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=Never+let+a+girl+cook+in+your+kitchen">
+                    <a href="detail.php?for=Never+let+a+girl+cook+in+your+kitchen">
                         <h4>Never let a girl cook in your kitchen</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/Kitchen.png" alt="Kitchen.png" /></p>
@@ -87,7 +63,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=Not+135+Perry+Street">
+                    <a href="detail.php?for=Not+135+Perry+Street">
                         <h4>Not 135 Perry Street</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/UglyChair.png" alt="UglyChair.png" /></p>
@@ -95,7 +71,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=135+Perry+Street">
+                    <a href="detail.php?for=135+Perry+Street">
                         <h4>135 Perry Street</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/135PerryStreet.jpg" alt="135PerryStreet.jpg" /></p>
@@ -103,7 +79,7 @@
                     </a>
                 </div> <!-- .bubble -->
                 <div class="bubble">
-                    <a href="detail.html?for=95+Charles+Street">
+                    <a href="detail.php?for=95+Charles+Street">
                         <h4>95 Charles Street</h4>
                         <h6>Sold</h6>
                         <p><img src="Assets/Images/95CharlesStreet.jpg" alt="95CharlesStreet.jpg" /></p>
@@ -111,14 +87,12 @@
                     </a>
                 </div> <!-- .bubble -->
             </div> <!-- .bubblies -->
-            <form id="detailForBubble" action="detail.html">
+            <form id="detailForBubble" action="detail.php">
                 <input type="hidden" name="for" />
             </form>
         </div> <!-- .container -->
         <!-- Scripts -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-            <script src="Assets/Foundation/js/foundation.min.js"></script>
-            <script src="Assets/Foundation/js/foundation/foundation.topbar.js"></script>
+            <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
             <script>
                 $(document).foundation();
             </script>
