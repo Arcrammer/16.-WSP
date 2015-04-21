@@ -35,7 +35,6 @@
     -khtml-user-select: none; /* Prevent selection */
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
 }
 
 .bubble:hover {
