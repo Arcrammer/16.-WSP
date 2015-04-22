@@ -43,6 +43,39 @@
     background-color: #54c9a2 !important;
 }
 
+/* Unslider's Barebones */
+.slidesies {
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    bottom: 75px;
+    overflow: auto;
+}
+
+.slidesies li {
+    background-image: url("../Images/95CharlesStreet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    list-style: none;
+}
+
+.slidesies ul li {
+    float: left;
+}
+
+/* Unslider Slides */
+.slidesie h4 {
+    color: #fafafa;
+    margin: 2.5% 0;
+    width: 20%;
+}
+
+.slidesie p {
+    color: #fafafa;
+    float: left;
+    margin: 1%;
+    width: 40%;
+}
+
 @media only screen
     and (max-width: 990px) {
         /* 925px and less */
