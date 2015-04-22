@@ -4,6 +4,11 @@
     Web Standards Project
     Full Sail University  */
 
+/* Structure */
+body {
+    background-attachment: fixed !important;
+}
+
 /* Search Bar */
 .search-bar input[type="text"] {
     margin: 20% auto 0 !important;

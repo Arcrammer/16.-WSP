@@ -52,9 +52,6 @@
 }
 
 .slidesies li {
-    background-image: url("../Images/95CharlesStreet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     list-style: none;
 }
 
@@ -63,17 +60,24 @@
 }
 
 /* Unslider Slides */
-.slidesie h4 {
-    color: #fafafa;
+.slidesies ul li h4 {
+    color: #777;
     margin: 2.5% 0;
     width: 20%;
 }
 
-.slidesie p {
-    color: #fafafa;
+.slidesies ul li p {
+    color: #555;
     float: left;
     margin: 1%;
     width: 40%;
+}
+
+.slidesies ul li img {
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    width: 45% !important;
 }
 
 @media only screen
