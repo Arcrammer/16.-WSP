@@ -34,14 +34,28 @@
                         <div>
                             <h1>Pre-approval</h1>
                             <p>Get a pre-approval letter from a participating lender in minutes through Zillow's website or the Zillow Mortgages app.</p>
-                            <img src="Assets/Images/95CharlesStreet.jpg" alt="95CharlesStreet.jpg" />
+                            <img src="Assets/Images/135PerryStreet.jpg" alt="135PerryStreet.jpg" />
                         </div>
                     </li>
                     <li>
                         <div>
                             <h1>Home Estimations</h1>
                             <p>Use Pararmani's popular Pestimate as a starting point for a home's value and couple it with the Pestimate forecast to see its future value.</p>
-                            <img src="Assets/Images/95CharlesStreet.jpg" alt="95CharlesStreet.jpg" />
+                            <img src="Assets/Images/Gatchina.jpg" alt="Gatchina.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1>Something New</h1>
+                            <p>Are you looking for the newest apartments around the city? We contact local developments before they even open their doors in order to bring you the most accurate and useful listings.</p>
+                            <img src="Assets/Images/432ParkAvenue.jpg" alt="432ParkAvenue.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1>It's so ugly!</h1>
+                            <p>Designing a stunning flat can be frustrating. Let our worldwide known designers do it for you! They love it, and you will, too.</p>
+                            <img src="Assets/Images/FloorCielingWindows.png" alt="FloorCielingWindows.png" />
                         </div>
                     </li>
                 </ul>
