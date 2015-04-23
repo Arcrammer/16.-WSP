@@ -3,21 +3,22 @@
   <head>
     <title>Pararmani / History</title>
     <!-- Metadata -->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Links -->
-      <link rel="shortcut icon" href="Assets/Images/Logo.png" />
-      <link rel="stylesheet" href="Assets/Stylesheets/Normalize.css" />
-      <link rel="stylesheet" href="Assets/Bootstrap/js/bootstrap.min.js" />
-      <link rel="stylesheet" href="Assets/Stylesheets/Main.css" />
+      <link rel="shortcut icon" href="Assets/Images/Logo.png">
+      <link rel="stylesheet" href="Assets/Stylesheets/Normalize.css">
+      <link rel="stylesheet" href="Assets/Bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="Assets/Bootstrap/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="Assets/Stylesheets/Main.css">
   </head>
   <body>
     <div class="container">
       <?php include "Assets/Inclusions/Navigation.php" ?>
       <div class="search-bar row">
-        <form method="post">
-          <input type="text" placeholder="Search Properties..." />
-          <input type="submit" class="button" value="Find it!" />
+        <form method="post" id="property-search">
+          <input placeholder="Search Properties..." type="text" id="search-bar">
+          <input class="button mint-button" type="submit" value="Find it!">
         </form>
       </div> <!-- .search-bar .row -->
       <div class="bubblies">
@@ -89,6 +90,7 @@
     </div> <!-- .container -->
     <!-- Scripts -->
       <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
+      <script src="Assets/Bootstrap/js/bootstrap.min.js"></script>
       <script>
         $(document).foundation();
       </script>

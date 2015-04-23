@@ -180,60 +180,6 @@ body {
     width: 100%;
 }
 
-.bubble {
-    background-color: rgba(255,255,255,0.9);
-    border: 2px solid rgba(64,64,64,0.5);
-    cursor: pointer;
-    float: left;
-    margin: 0.6313131313%;
-    padding: 1.2626262626%;
-    transition: background-color 175ms;
-    width: 23.737373737%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none; /* Prevent selection */
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.bubble:hover {
-    background-color: #fff;
-}
-
-.bubble:active {
-    background-color: rgba(255,255,255,0.8);
-}
-
-.bubble a {
-    color: #555 !important;
-}
-
-.bubble h4 {
-    color: #555;
-    font-size: 1em;
-    letter-spacing: 1.5px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.bubble h6 {
-    color: #7c7c7c;
-    font-size: 0.7em;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.bubble p:first-of-type {
-    /* Image thumbnails */
-    margin: 0;
-}
-
-.bubble p:not(:first-of-type) {
-    font-size: 0.8em;
-    padding: 15px 5px;
-}
-
 @media only screen
     and (max-width: 990px) {
         /* 925px and less */
