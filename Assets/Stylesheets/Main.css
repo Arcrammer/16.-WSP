@@ -280,3 +280,82 @@ a.mint-button:active, .mint-button:active {
       width: 100% !important;
     }
   }
+
+/*  Support
+    Thursday, 23 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* FAQ Panels */
+.faq-panels {
+  margin-top: 10%;
+}
+
+.faq-panels div {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  float: left;
+  margin: 0 1.8939393939%;
+  padding: 2.7268853856%;
+  width: 29.545454545%;
+}
+
+.faq-panels div h4 {
+  color: #555;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.faq-panels li {
+  font-size: 0.9em;
+  margin: 7.5% 5%;
+}
+
+.faq-panels a {
+  color: #d96dd9;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 100ms;
+}
+
+.faq-panels a:link {
+  color: #d96dd9;
+}
+
+.faq-panels a:visited {
+  color: #d96dd9;
+}
+
+.faq-panels a:hover {
+  color: #c34dc3;
+  text-decoration: underline;
+}
+
+.faq-panels a:active {
+  color: #a139a1;
+}
+
+/* Media Queries */
+@media only screen
+  and (max-width: 980px) {
+    /* 980px and thinner */
+    
+    .faq-panels div {
+      width: 45%;
+    }
+  }
+
+@media only screen
+  and (max-width: 500px) {
+    /* 500px and thinner */
+    
+    .faq-panels div {
+      margin: 5% 0;
+      width: 100%;
+    }
+  }
