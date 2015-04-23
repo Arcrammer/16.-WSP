@@ -1,5 +1,5 @@
 /*  Main.css
-    Monday, 13 April, 2015
+    Thursday, 23 April, 2015
     Alexander Rhett Crammer
     Web Standards Project
     Full Sail University  */
@@ -7,120 +7,48 @@
 /* Master Reset */
 html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{vertical-align:baseline;font-family:inherit;font-weight:inherit;font-style:inherit;font-size:100%;outline:0;padding:0;margin:0;border:0}:focus{outline:0}body{background:#fff;line-height:1;color:#000}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{font-weight:400;text-align:left}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}
 
-/* Resetting annoying Foundation properties */
-.top-bar .button, .top-bar button {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 /* Structure */
 body {
-    background-color: #555 !important;
-    background-image: url("../Images/OneMadisonPark.jpg") !important;
-    background-position: center 15% !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  background-color: #555;
+  background-image: url("../Images/OneMadisonPark.jpg");
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 1em;
 }
 
 .container {
-    margin: auto;
-    width: 93.75%;
+  margin: 2.5% auto;
+  overflow: auto;
+  width: 90%;
 }
 
 /* Top Bar */
-.container > .contain-to-grid, .top-bar .fixed, .top-bar, .top-bar li, .top-bar .top-bar-section a {
-    /* Re-colour the top bar */
-    background-color: #53dee5 !important;
-}
-
-.top-bar {
-    overflow: hidden !important;
-    margin: 10px auto !important;
-    width: 80%;
-}
-
-.divider {
-    border-color: #4ec8ce !important;
-    margin: 5px 10px;
-    height: 35px !important;
-}
-
-.name > h1 {
-    /* Logo and Title */
-    font-family: "Museo Slab";
-    float: right;
-}
-
 img[alt="Logo.png"] {
-    float: left;
-    width: 25px;
+  height: 200%;
+  position: relative;
+  top: -50%;
 }
 
-input[name="search_query"] {
-    border-radius: 5px !important;
-    font-size: 14px;
-    font-weight: 200;
-    letter-spacing: 0.5px;
-    margin-top: -1.5px !important;
-    padding: 15px !important;
-    width: 112.44019139% !important;
-}
-
-/* Menu Items */
-nav img[alt="Search.png"] {
-    height: 12.5px;
-    position: relative;
-    top: -2px;
-}
-
-/* Menu Links */
-nav section.top-bar-section ul.right a:link {
-    font-size: 0.75em !important;
-    height: 100% !important;
-    letter-spacing: 1.75px !important;
-    overflow: hidden; /* Prevent list items from showing taller than the navigation bar */
-    padding: 15px !important;
-    top: 0;
-    text-transform: uppercase !important;
-}
-
-nav section.top-bar-section ul.right a:visited {
-    padding: 15px !important;
-}
-
-nav section.top-bar-section ul.right a:hover {
-    padding: 13px !important;
-}
-
-nav section.top-bar-section ul.right a:visited {
-    padding: 13px !important;
-}
-
-/* Buttons */
+/* Mint Buttons */
 .mint-button {
-    border-color: #73e6bf !important; /* Starting colour -- Prevents border animating from #000 which is the default */
-    transition: background-color 75ms, border-color 75ms !important;
+  background-color: #73e6bf;
+  border: 2px solid #73e6bf; /* Starting border -- Prevents border animating from #000 or gray, one of which is the default */
+  color: #fafafa;
+  letter-spacing: 0.04457401164em;
+  padding: 1.5318823004% 2.0425097338%;
+  transition: background-color 125ms, border-color 125ms;
 }
 
-a.button:link, .mint-button {
-    background-color: #73e6bf !important;
+a.mint-button:hover, .mint-button:hover {
+  background-color: #7eefc9;
+  border: 2px solid #54c9a2;
 }
 
-a.button:visited, .mint-button:visited {
-    background-color: #73e6bf !important;
-}
-
-a.button:hover, .mint-button:hover {
-    background-color: #7eefc9 !important;
-    border: 2px solid #54c9a2 !important;
-    padding: 15px !important;
-}
-
-a.button:active, .mint-button:active {
-    background-color: #4cb491 !important;
-    color: #f1f1f1 !important;
-    border: 2px solid #5cc7a4 !important;
-    padding: 15px !important;
+a.mint-button:active, .mint-button:active {
+  background-color: #4cb491;
+  border-color: #5cc7a4;
 }
 
 /* Fonts */
@@ -132,21 +60,105 @@ a.button:active, .mint-button:active {
 
 /* Media Queries */
 @media only screen
-    and (max-width: 990px) {
-        /* 925px and less */
-        
-        /* Top Bar */
-        .top-bar .right {
-            display: none !important;
-        }
+  and (max-width: 1000px) {
+    /* 1000px and wider */
+    
+    /* Top Bar */
+    #navigation-list {
+      /* Move the navigation list to the right */
+      float: right;
     }
+    
+    form[role="search"] {
+      /* Hide the search feature */
+      display: none !important;
+    }
+  }
 
 @media only screen
-    and (min-width: 990px) {
-        /* 990px and higher */
-        
-        /* Structure */
-        .container {
-            width: 792px;
-        }
+  and (max-width: 768px) {
+    /* 768px and thinner */
+    
+    /* Top Bar */
+    #navigation-list {
+      text-align: center;
+      width: 100%;
     }
+  }
+
+/*  Search
+    Thursday, 23 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Property Search CTA */
+#property-search {
+  text-align: center;
+}
+
+#property-search input[type="text"] {
+  border: 2px solid #eaeaea;
+  border-radius: 7.5px;
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0.05457401164em;
+  margin: 7.5% auto;
+  padding: 2.1829592742% 3.2744389112%;
+  width: 65%;
+}
+
+#property-search input[type="text"]:hover {
+  font-style: italic;
+}
+
+#property-search input[type="text"]:active {
+  font-style: italic;
+}
+
+#property-search input[type="submit"] {
+  border-radius: 5px;
+  margin-left: 2.5%;
+}
+
+/* Unslider's Barebones */
+.slidesies {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    margin-top: 7.5%;
+    overflow: auto;
+}
+
+.slidesies li {
+    list-style: none;
+}
+
+.slidesies ul li {
+    float: left;
+}
+
+/* Unslider Slides */
+.slidesies ul li h1 {
+  color: #555;
+  font-size: 1.75em;
+  letter-spacing: 0.05em;
+  padding: 4.0736160617%;
+  text-indent: 1.745835455%;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.slidesies ul li p {
+  color: #777;
+  float: left;
+  line-height: 175%;
+  padding: 5%;
+  width: 45%;
+}
+
+.slidesies ul li img {
+  border-radius: 10px;
+  float: right;
+  margin: -8% 3.5% 2.5%;
+  width: 45%;
+}

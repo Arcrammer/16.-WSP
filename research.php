@@ -8,10 +8,8 @@
         <!-- Links -->
             <link rel="shortcut icon" href="Assets/Images/Logo.png" />
             <link rel="stylesheet" href="Assets/Stylesheets/Normalize.css" />
-            <link rel="stylesheet" href="Assets/Stylesheets/Main.css" />
-            <link rel="stylesheet" href="Assets/Stylesheets/Search.css" />
-            <link rel="stylesheet" href="Assets/Stylesheets/History.css" />
             <link rel="stylesheet" href="Assets/Foundation/css/foundation.min.css" />
+            <link rel="stylesheet" href="Assets/Stylesheets/Main.css" />
     </head>
     <body>
         <div class="container">

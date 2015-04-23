@@ -1,0 +1,450 @@
+/*  Main.css
+    Monday, 13 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Top Bar */
+.container > .contain-to-grid, .top-bar .fixed, .top-bar, .top-bar li, .top-bar .top-bar-section a {
+    /* Re-colour the top bar */
+    background-color: #53dee5 !important;
+}
+
+.top-bar {
+    overflow: hidden !important;
+    margin: 10px auto !important;
+    width: 80%;
+}
+
+.divider {
+    border-color: #4ec8ce !important;
+    margin: 5px 10px;
+    height: 35px !important;
+}
+
+.name > h1 {
+    /* Logo and Title */
+    font-family: "Museo Slab";
+    float: right;
+}
+
+/* Menu Items */
+nav img[alt="Search.png"] {
+    height: 12.5px;
+    position: relative;
+    top: -2px;
+}
+
+/* Menu Links */
+nav section.top-bar-section ul.right a:link {
+    font-size: 0.75em !important;
+    height: 100% !important;
+    letter-spacing: 1.75px !important;
+    overflow: hidden; /* Prevent list items from showing taller than the navigation bar */
+    padding: 15px !important;
+    top: 0;
+    text-transform: uppercase !important;
+}
+
+nav section.top-bar-section ul.right a:visited {
+    padding: 15px !important;
+}
+
+nav section.top-bar-section ul.right a:hover {
+    padding: 13px !important;
+}
+
+nav section.top-bar-section ul.right a:visited {
+    padding: 13px !important;
+}
+
+/* Buttons */
+a.button:hover, .mint-button:hover {
+    background-color: #7eefc9 !important;
+    border: 2px solid #54c9a2 !important;
+    padding: 15px !important;
+}
+
+a.button:active, .mint-button:active {
+    background-color: #4cb491 !important;
+    color: #f1f1f1 !important;
+    border: 2px solid #5cc7a4 !important;
+    padding: 15px !important;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Museo Slab";
+    font-weight: 500;
+    src: url("../Fonts/MuseoSlab.otf");
+}
+
+/* Media Queries */
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Top Bar */
+        .top-bar .right {
+            display: none !important;
+        }
+    }
+
+@media only screen
+    and (min-width: 990px) {
+        /* 990px and higher */
+        
+        /* Structure */
+        .container {
+            width: 792px;
+        }
+    }
+
+/*  Search
+    Tuesday, 14 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Search Bar */
+.search-bar input[type="text"] {
+    background: rgba(255,255,255,0.975) !important;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 1.25em !important;
+    height: 72.5px;
+    letter-spacing: 0.75px;
+    margin: 5% auto;
+    text-indent: 4.4191919192% !important;
+    transition: box-shadow 175ms;
+    -webkit-transition: box-shadow 175ms;
+}
+
+.search-bar input[type="text"]:hover, .search-bar input[type="text"]:active {
+    background-color: #fff;
+}
+
+/* Search Button */
+.search-bar input[type="text"]:hover, .search-bar input[type="text"]:focus {
+    border-color: rgb(115,230,191);
+    box-shadow: 0 0 10px 0 rgb(115,230,191);
+    font-style: italic;
+}
+
+.search-bar input[type="submit"] {
+    background-color: #73e6bf !important;
+    position: relative;
+    top: -100px;
+    right: 10px;
+    float: right;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #7eefc9 !important;
+}
+
+.search-bar input[type="submit"]:active {
+    background-color: #54c9a2 !important;
+}
+
+/* Unslider's Barebones */
+.slidesies {
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    bottom: 75px;
+    overflow: auto;
+}
+
+.slidesies li {
+    list-style: none;
+}
+
+.slidesies ul li {
+    float: left;
+}
+
+/* Unslider Slides */
+.slidesies ul li h4 {
+    color: #777;
+    margin: 2.5% 0;
+    width: 20%;
+}
+
+.slidesies ul li p {
+    color: #555;
+    float: left;
+    margin: 1%;
+    width: 40%;
+}
+
+.slidesies ul li img {
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    width: 45% !important;
+}
+
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Search Button */
+        .search-bar input[type="submit"] {
+            margin: 0 32.5% 45px;
+            position: relative;
+            top: -50px;
+            right: 0;
+            width: 35%;
+        }
+    }
+
+@media only screen
+    and (max-width: 500px) {
+        /* 500px and wider */
+        
+        /* Search Bar */
+        .search-bar input[type="text"] {
+            height: 50px !important;
+        }
+    }
+
+/*  History
+    Tuesday, 14 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Structure */
+body {
+    background-attachment: fixed !important;
+}
+
+/* Bubblies */
+.bubblies {
+    overflow: auto;
+    width: 100%;
+}
+
+.bubble {
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(64,64,64,0.5);
+    cursor: pointer;
+    float: left;
+    margin: 0.6313131313%;
+    padding: 1.2626262626%;
+    transition: background-color 175ms;
+    width: 23.737373737%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; /* Prevent selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.bubble:hover {
+    background-color: #fff;
+}
+
+.bubble:active {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.bubble a {
+    color: #555 !important;
+}
+
+.bubble h4 {
+    color: #555;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bubble h6 {
+    color: #7c7c7c;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bubble p:first-of-type {
+    /* Image thumbnails */
+    margin: 0;
+}
+
+.bubble p:not(:first-of-type) {
+    font-size: 0.8em;
+    padding: 15px 5px;
+}
+
+@media only screen
+    and (max-width: 990px) {
+        /* 925px and less */
+        
+        /* Search Button */
+        .search-bar input[type="submit"] {
+            margin: 0 32.5% 45px;
+            position: relative;
+            top: 15px !important;
+            right: 0;
+            width: 35%;
+        }
+        
+        /* Bubblies */
+        .bubble {
+            float: left;
+            margin: 10px;
+            padding: 0;
+            width: 44.5%;
+        }
+        
+        .bubble:nth-child(2n+0) {
+            float: right;
+        }
+    }
+
+/*  Support
+    Wednesday, 15 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* FAQ Panels */
+.faq-panels {
+    margin-top: 10%;
+}
+
+.faq-panels div {
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 1.8939393939%;
+    width: 29.545454545%;
+}
+
+.faq-panels div h4 {
+    color: #555;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin: 5% 0;
+    text-transform: uppercase;
+}
+
+.faq-panels li {
+    font-size: 0.9em;
+    margin: 5% 0;
+    text-indent: -5px;
+}
+
+.faq-panels a {
+    color: #d96dd9 !important;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: color 100ms;
+}
+
+.faq-panels a:link {
+    color: #d96dd9 !important;
+}
+
+.faq-panels a:visited {
+    color: #d96dd9 !important;
+}
+
+.faq-panels li a:hover {
+    color: #c34dc3 !important;
+    text-decoration: underline;
+}
+
+.faq-panels li a:active {
+    color: #a139a1 !important;
+}
+
+@media only screen
+    and (max-width: 640px) {
+        /* 640px and thinner */
+        
+        .faq-panels div {
+            margin: 2% 0;
+            width: 100%;
+        }
+    }
+
+/*  New
+    Tuesday, 14 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Entire Form */
+form {
+    margin-top: 4.8828125% !important;
+    overflow: auto;
+}
+
+.fields {
+    /* Columns */
+    background-color: rgba(255,255,255,0.9);
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.form-section-title {
+    /* Column titles */
+    border-bottom: 1px solid #888;
+    color: #555;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Form Fields */
+label[for="a"], label[for="p"] {
+    
+}
+
+/*  Detail
+    Wednesday, 15 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Content */
+.detail {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 5px;
+    margin: 4.8828125% 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.detail h4 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.detail h6 {
+    color: #333;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.detail img {
+    border-radius: 25px;
+    width: 90%;
+}
+
+.detail p {
+    color: #333;
+    line-height: 200%;
+    margin-top: 15px;
+}
+
+a[href="research.html"] {
+    display: block;
+    margin: auto auto 15%;
+    width: 30%;
+}
