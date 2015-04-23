@@ -25,10 +25,35 @@ body {
 }
 
 /* Top Bar */
+.navbar {
+  border: 0;
+  background-image: linear-gradient(to top, #53dee5, #69e9ef);
+}
+
+.navbar a {
+  color: #fff !important;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.navbar a:first-of-type {
+  font-size: 0.75em;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.navbar a:not(:first-of-type) {
+  text-indent: -4.36919716%;
+}
+
 img[alt="Logo.png"] {
   height: 200%;
   position: relative;
   top: -50%;
+}
+
+form[role="search"] input[type="text"] {
+  text-indent: 10px;
 }
 
 /* Mint Buttons */
@@ -105,6 +130,7 @@ a.mint-button:active, .mint-button:active {
   letter-spacing: 0.05457401164em;
   margin: 7.5% auto;
   padding: 2.1829592742% 3.2744389112%;
+  transition: border 175ms;
   width: 65%;
 }
 

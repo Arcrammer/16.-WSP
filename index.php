@@ -50,7 +50,7 @@
           </li>
         </ul>
       </div> <!-- .slidesies -->
-    </div><!-- .container -->
+    </div> <!-- .container -->
     <!-- Scripts -->
     <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
     <script src="Assets/Bootstrap/js/bootstrap.min.js"></script>
@@ -64,7 +64,15 @@
         });
         
         /* Document */
-        document.getElementById("#search-bar").focus();
+        document.getElementById("search-bar").focus();
+        $("#search-bar").keydown(function (searchBarKeyDown) {
+          var textField = searchBarKeyDown.target;
+          $(textField).css("border-color","#73e6bf");
+        });
+        $("#search-bar").keyup(function (searchBarKeyUp) {
+          var textField = searchBarKeyUp.target;
+          $(textField).css("border-color","#eaeaea");
+        });
       });
     </script>
   </body>
