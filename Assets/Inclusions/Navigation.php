@@ -15,7 +15,6 @@
     <div class="collapse navbar-collapse" id="navigation-list">
       <ul class="nav navbar-nav">
         <li><a href="research.php" class="button">History</a></li>
-        <li><a href="support.php" class="button">Support</a></li>
         <li><a href="new.php" class="button">Create</a></li>
         <li><a href="support.php" class="button">Support</a></li>
       </ul> <!-- .nav .navbar-nav -->
