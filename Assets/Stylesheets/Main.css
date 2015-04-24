@@ -345,8 +345,13 @@ a.mint-button:active, .mint-button:active {
   and (max-width: 980px) {
     /* 980px and thinner */
     
+    /* FAQ Panels */
     .faq-panels div {
       width: 45%;
+    }
+    
+    .faq-panels h4 {
+      margin: 5%;
     }
   }
 
@@ -354,8 +359,59 @@ a.mint-button:active, .mint-button:active {
   and (max-width: 500px) {
     /* 500px and thinner */
     
+    /* FAQ Panels */
     .faq-panels div {
       margin: 5% 0;
+      width: 100%;
+    }
+  }
+
+/*  New
+    Friday, 24 April, 2015
+    Alexander Rhett Crammer
+    Web Standards Project
+    Full Sail University  */
+
+/* Form */
+.fields {
+  /* Columns */
+  background-color: rgba(255,255,255,0.9);
+  float: left;
+  margin: 1.6835016835%;
+  padding: 2.8058361392% 3.9281705948%;
+  width: 29.966329966%;
+}
+
+.form-section-title {
+  /* Column titles */
+  border-bottom: 1px solid #888;
+  color: #555;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-bottom: 6.7335230691%;
+  padding-bottom: 4.4890153794%;
+  text-indent: 6.7335230691%;
+  text-transform: uppercase;
+}
+
+.fields input {
+  margin: 2.5% 2.5% 2.5% 0;
+  padding: 2.4366709227%;
+  width: 100%;
+}
+
+.fields input[type="submit"] {
+  font-size: 1em;
+  letter-spacing: normal;
+  padding: 5%;
+}
+
+@media only screen
+  and (max-width: 768px) {
+    /* 768px and thinner */
+    
+    /* Form */
+    .fields {
       width: 100%;
     }
   }

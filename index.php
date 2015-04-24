@@ -53,7 +53,6 @@
     </div> <!-- .container -->
     <!-- Scripts -->
     <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
-    <script src="Assets/Bootstrap/js/bootstrap.min.js"></script>
     <script src="Assets/Scripts/unslider.min.js"></script>
     <script>
       $(document).ready(function () {

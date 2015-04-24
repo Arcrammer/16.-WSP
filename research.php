@@ -90,7 +90,6 @@
     </div> <!-- .container -->
     <!-- Scripts -->
       <?php include "Assets/Inclusions/Site-wide Scripts.php" ?>
-      <script src="Assets/Bootstrap/js/bootstrap.min.js"></script>
       <script>
         $(document).foundation();
       </script>
