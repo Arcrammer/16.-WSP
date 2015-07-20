@@ -1,6 +1,6 @@
 # Web Standards Project
 
-#### This site is hosted <a href="http://www.hausofalexander.tk/UniversitySites/WSP/" target="_blank">over at Haus of Alexander</a>.
+#### This site is hosted <a href="http://www.hausofalexander.ml/UniversitySites/WSP/" target="_blank">over at Haus of Alexander</a>.
 
 This course examines students' development abilities by asking them to create a site over the course of the month. Students were given a choice of a site to create and I've chosen to create a prototype for real estate search and listing. The site allows anyone to list and search real estate listings within its' database. Listings are created by scheduling a meet-up with a member of the company in order to verify details of the property to be listed are as accurate as possible.
 
